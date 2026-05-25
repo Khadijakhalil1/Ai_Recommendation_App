@@ -1,21 +1,5 @@
-// import mongoose from "mongoose";
+import mongoose from "mongoose";
 
-// export const connectDB = async () => {
-//     try {
-//         await mongoose.connect(process.env.MONGO_URL);
-//         console.log("DB Connected");
-//     } catch (error) {
-//         console.log("DB connection error:", error);
-//     }
-// };
-
-// import mongoose from "mongoose";
-
-// export const connectDB = async () => {
-//     try {
-//         await mongoose.connect(process.env.MONGO_URL);
-//         console.log("DB Connected");
-//     } catch (error) {
-//         console.log("DB connection error:", error.message);
-//     }
-// };
+export const connectDB = async () => {
+        await mongoose.connect('mongodb+srv://khadija207:207@cluster0.jp42rdu.mongodb.net/Ai-recomendation-food-ordering-app').then(() =>console.log("DB Connected") );
+}
